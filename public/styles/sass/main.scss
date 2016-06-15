@@ -1,0 +1,165 @@
+$font-size-x-large: 36px;
+$font-size-medium: 22px;
+$font-size-normal: 16px;
+$font-size-small: 14px;
+
+$spacing-normal: 15px;
+$spacing-double: 30px;
+
+$gray: #cccccc;
+$black: #333333;
+
+$font-family-serif: 'Crimson Text', serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+body, div {
+    font-family: $font-family-serif;
+}
+
+.left-float {
+    float: left;
+}
+
+.right-float {
+    float: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.button {
+
+    &--large {
+        font-size: $font-size-medium;
+    }
+
+    &--full {
+        width: 100%;
+    }
+
+    &--transparent {
+        border: 2px solid $black;
+        background: none;
+    }
+}
+
+.container--max-width {
+    max-width: 960px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner {
+    padding: $spacing-double;
+
+    &__header {
+        text-align: right;
+    }
+
+    &__content {
+        padding: 50px 0;
+        // text-align: center;
+    }
+
+    &__title {
+        font-size: $font-size-x-large;
+        font-family: $font-family-sans-serif;
+    }
+
+    &__subtitle {
+        font-size: $font-size-medium;
+        margin-top: 10px;
+    }
+
+    .button--transparent {
+        font-size: $font-size-small;
+        font-family: $font-family-sans-serif;
+    }
+
+    .button--large {
+        margin-top: 20px; 
+    }
+
+    &__footer {
+        text-align: right;
+        font-size: $font-size-small;
+    }
+}
+
+.banner--home::after {
+    content: "";
+    background-image: url(../../images/customerworkshop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.banner--home {
+    display: block;
+    position: relative;
+}
+
+.main-content {
+    padding: $spacing-normal;
+    margin-top: $spacing-normal;
+    margin-bottom: $spacing-normal;
+}
+
+.card {
+    margin: $spacing-normal;
+    border: 1px solid $gray;
+
+    &__image {
+        background-image: url(../../images/amplify01.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        border-bottom: 1px solid $gray;
+    }
+
+    &__content {
+        padding: $spacing-normal;
+        border-bottom: 1px solid $gray;
+        line-height: 1.4em;
+    }
+
+    &__title {
+        font-family: $font-family-sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $font-size-medium;
+        margin: 8px 0;
+    }
+
+    &__instructor {
+        font-size: $font-size-normal;
+    }
+
+    &__date {
+        font-size: $font-size-normal;
+    }
+
+    &__footer {
+        padding: 10px $spacing-normal;
+        font-size: $font-size-small;
+    }
+
+    a.like__button {
+        color: inherit;
+        margin-right: 8px;
+    }
+
+    .button--large {
+        margin-top: $spacing-normal;
+    }
+}

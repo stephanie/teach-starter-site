@@ -1,0 +1,104 @@
+body, div {
+  font-family: "Crimson Text", serif; }
+
+.left-float {
+  float: left; }
+
+.right-float {
+  float: right; }
+
+.clear-both {
+  clear: both; }
+
+.button--large {
+  font-size: 22px; }
+
+.button--full {
+  width: 100%; }
+
+.button--transparent {
+  border: 2px solid #333333;
+  background: none; }
+
+.container--max-width {
+  max-width: 960px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.banner {
+  padding: 30px; }
+  .banner__header {
+    text-align: right; }
+  .banner__content {
+    padding: 50px 0; }
+  .banner__title {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif; }
+  .banner__subtitle {
+    font-size: 22px;
+    margin-top: 10px; }
+  .banner .button--transparent {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif; }
+  .banner .button--large {
+    margin-top: 20px; }
+  .banner__footer {
+    text-align: right;
+    font-size: 14px; }
+
+.banner--home::after {
+  content: "";
+  background-image: url(../../images/customerworkshop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.banner--home {
+  display: block;
+  position: relative; }
+
+.main-content {
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.card {
+  margin: 15px;
+  border: 1px solid #cccccc; }
+  .card__image {
+    background-image: url(../../images/amplify01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-bottom: 1px solid #cccccc; }
+  .card__content {
+    padding: 15px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 1.4em; }
+  .card__title {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 8px 0; }
+  .card__instructor {
+    font-size: 16px; }
+  .card__date {
+    font-size: 16px; }
+  .card__footer {
+    padding: 10px 15px;
+    font-size: 14px; }
+  .card a.like__button {
+    color: inherit;
+    margin-right: 8px; }
+  .card .button--large {
+    margin-top: 15px; }
