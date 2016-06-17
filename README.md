@@ -1,6 +1,4 @@
-# node-sass-es2015-sample
-
-A modified version of Heroku's barebones Node.js app [https://github.com/heroku/node-js-sample] with added Gulp, SASS and ES2015 support.
+A modified version of Heroku's barebones Node.js app [https://github.com/heroku/node-js-sample] with added Gulp and SASS support.
 
 This app uses Jade for easy templating. 
 
@@ -23,7 +21,3 @@ heroku create
 git push heroku master
 heroku open
 ```
-
-## Documentation
-
-For more information about using Gulp, Jade, SASS, and ES2015, check out these helpful links:

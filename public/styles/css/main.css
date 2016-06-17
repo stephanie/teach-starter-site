@@ -1,3 +1,5 @@
+/***** VARIABLES *****/
+/***** BASE *****/
 body, div {
   font-family: "Crimson Text", serif; }
 
@@ -10,6 +12,18 @@ body, div {
 .clear-both {
   clear: both; }
 
+.container--max-width {
+  max-width: 960px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main-content {
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+/***** COMPONENTS *****/
 .button--large {
   font-size: 22px; }
 
@@ -19,12 +33,6 @@ body, div {
 .button--transparent {
   border: 2px solid #333333;
   background: none; }
-
-.container--max-width {
-  max-width: 960px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
 .banner {
   padding: 30px; }
@@ -46,29 +54,6 @@ body, div {
   .banner__footer {
     text-align: right;
     font-size: 14px; }
-
-.banner--home::after {
-  content: "";
-  background-image: url(../../images/customerworkshop.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
-
-.banner--home {
-  display: block;
-  position: relative; }
-
-.main-content {
-  padding: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
 
 .card {
   margin: 15px;
@@ -102,3 +87,22 @@ body, div {
     margin-right: 8px; }
   .card .button--large {
     margin-top: 15px; }
+
+/***** VIEWS *****/
+.banner--home::after {
+  content: "";
+  background-image: url(../../images/customerworkshop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+.banner--home {
+  display: block;
+  position: relative; }

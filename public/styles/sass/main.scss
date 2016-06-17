@@ -1,3 +1,7 @@
+//TODO: Split into different files
+
+/***** VARIABLES *****/
+
 $font-size-x-large: 36px;
 $font-size-medium: 22px;
 $font-size-normal: 16px;
@@ -11,6 +15,8 @@ $black: #333333;
 
 $font-family-serif: 'Crimson Text', serif;
 $font-family-sans-serif: 'Montserrat', sans-serif;
+
+/***** BASE *****/
 
 body, div {
     font-family: $font-family-serif;
@@ -28,6 +34,21 @@ body, div {
     clear: both;
 }
 
+.container--max-width {
+    max-width: 960px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content {
+    padding: $spacing-normal;
+    margin-top: $spacing-normal;
+    margin-bottom: $spacing-normal;
+}
+
+/***** COMPONENTS *****/
+
 .button {
 
     &--large {
@@ -42,13 +63,6 @@ body, div {
         border: 2px solid $black;
         background: none;
     }
-}
-
-.container--max-width {
-    max-width: 960px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .banner {
@@ -86,32 +100,6 @@ body, div {
         text-align: right;
         font-size: $font-size-small;
     }
-}
-
-.banner--home::after {
-    content: "";
-    background-image: url(../../images/customerworkshop.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-}
-
-.banner--home {
-    display: block;
-    position: relative;
-}
-
-.main-content {
-    padding: $spacing-normal;
-    margin-top: $spacing-normal;
-    margin-bottom: $spacing-normal;
 }
 
 .card {
@@ -162,4 +150,26 @@ body, div {
     .button--large {
         margin-top: $spacing-normal;
     }
+}
+
+/***** VIEWS *****/
+
+.banner--home::after {
+    content: "";
+    background-image: url(../../images/customerworkshop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.banner--home {
+    display: block;
+    position: relative;
 }
