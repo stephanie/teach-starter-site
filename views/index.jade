@@ -10,7 +10,11 @@ block content
                     | Attend any class in Singapore for SG$20
                 .banner__subtitle
                     | Everyone can teach. Everyone can be taught.
-                .button--large.pure-button.pure-button-primary Register now
+                //- .button--large.pure-button.pure-button-primary Register now
+                form(action='/mailchimp-lists/c34d5b90d2/subscribe/', method='post', class='form-inline')
+                  div(class='input-append')
+                    input(type='email', name='email', placeholder='email address')
+                    input(type='submit', class='btn', value='Register now')
             .banner__footer
                 | Photo: Ideation workshop at ThoughtWorks
     .main-content.container--max-width
